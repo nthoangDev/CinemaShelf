@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../assets/images/cinema2.jpg'); /* Đường dẫn đến hình nền */
+    background-size: cover; /* Phủ kín toàn bộ */
+    background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+    background-position: center center; /* Căn giữa hình nền */
+    height: 100vh; 
+    width: 100vw; 
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Lớp phủ tối */
+    z-index: 1;
+}
+
+.container{
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #000;
+    width: 40%;
+    height: auto;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    z-index: 2;
+    border-radius: 30px;
+    padding: 50px 70px;
+}
+.container h1{
+    text-align: center;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+}
+
+form > input{
+    display: block;
+    width: 100%;
+    padding: 10px 5px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #0A97B0;
+    margin: 5px;
+    background-color: transparent;
+}
+
+form > input:focus{
+    outline: none;
+}
+
+form > label{
+    font-weight: bold;
+}
+
+.c-btn{
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.c-btn button{
+    background-color: #0A97B0;
+    border-radius: 20px;
+    border: 2px solid #0A97B0;
+    padding: 10px 30px;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+}
+
+.c-btn button:hover{
+    background-color: #344C64;
+    border-color: #344C64;
+}
+
+.c-btn a{
+    background-color: transparent; 
+    color: #0A97B0;
+    text-decoration: none;
+    border: 2px solid #0A97B0;
+    border-radius: 20px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    transition: all 0.5s ease;
+}
+
+
+
+.c-btn a:hover{
+    background-color: #0A97B0;
+    color: #fff;
+}
+
+.c-term{
+    margin-top: 20px;
+    color: #444;
+}
+
+.c-term  a{
+    text-decoration: none;
+    color: #0A97B0;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .container{
+        width: 90%;
+        top: 10%;
+        left: 5%;
+        padding: 10px 50px;
+    }
+    .c-btn{
+        flex-direction: column;
+    }
+}

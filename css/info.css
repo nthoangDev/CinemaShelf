@@ -1,0 +1,223 @@
+/* info.css */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #1c1c1c;
+    color: white;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background: #333;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-container {
+    display: flex;
+    gap: 20px;
+    padding: 208px 80px 0 80px;
+}
+
+.banner-preview-img-container {
+    width: 300px;
+    flex-shrink: 0;
+}
+
+.banner-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 12px;
+}
+
+#movie-title {
+    font-size: 36px;
+}
+
+#movie-description {
+    font-size: 20px;
+    text-align: justify;
+}
+
+#watch-now-btn {
+    font-size: 1.5rem;
+    color: #D91656;
+}
+
+#watch-now-btn:hover {
+    color: #FF2929;
+}
+
+.casts-container {
+    margin-top: 80px;
+    padding: 0 80px;
+}
+
+.casts-grid {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.casts-grid>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.casts-grid>div img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+#similar {
+    max-width: 1200px;
+    margin: 50px auto 0;
+}
+
+#similar .section {
+    margin-top: 20px;
+}
+
+.cinema-comment {
+    max-width: 1200px;
+    margin: 40px auto 0;
+}
+
+.cinema-comment>hr {
+    border: 1px solid #888;
+}
+
+#comments {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    /* Kéo dãn chiều ngang của phần tử con */
+    gap: 1rem;
+}
+
+/* Định dạng chung cho container của comment box */
+#comment-box-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background-color: #222;
+    /* Nền màu tối */
+    color: #fff;
+    /* Chữ màu trắng */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+
+#avatar-commnet {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+/* Định dạng cho form nhập liệu */
+#comment-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    background-color: #333;
+    /* Nền màu tối hơn */
+    color: #fff;
+    /* Chữ màu trắng */
+    border: 1px solid #555;
+    /* Đường viền màu tối */
+    border-radius: 5px;
+}
+
+/* Định dạng cho ô nhập bình luận */
+#comment-input {
+    width: 100%;
+    min-height: 40px;
+    padding: 10px;
+    border: 1px solid #555;
+    /* Đường viền màu tối */
+    font-size: 14px;
+    color: #fff;
+    /* Chữ màu trắng */
+    background-color: #333;
+    /* Nền màu tối hơn */
+    border: none;
+}
+
+#comment-input:focus {
+    outline: none;
+}
+
+/* Định dạng nút gửi bình luận */
+#comment-form button {
+    align-self: center;
+    padding: 8px 16px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#comment-form button:hover {
+    color: #D91656;
+}
+
+/* Định dạng danh sách các bình luận */
+#comments {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+}
+
+.comment-content {
+    display: flex;
+    width: 100%;
+}
+
+
+.comment-item:last-child {
+    border-bottom: none;
+}
+
+
+.commnet-text {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #555;
+    /* Đường kẻ dưới màu tối */
+    background-color: #222;
+    /* Nền màu tối */
+    color: #fff;
+    /* Chữ màu trắng */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+}
+
+.commnet-text>p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.comment-item>p {
+    color: #9da1ab;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 14px;
+}
